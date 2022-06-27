@@ -6,7 +6,7 @@ import NavBar from './components/NavBar/NavBar';
 import DefaultBg from './images/default_bg.png';
 import CloudySkyBg from './images/cloudy_sky_bg.png';
 import ClearSkyBg from './images/clear_sky_bg.png';
-import ThunderBg from './images/thunder_bg.jpg';
+import ThunderBg from './images/thunder_bg.png';
 import RainBg from './images/rain_bg.png';
 import ForecastCard from './components/ForecastCard/ForecastCard';
 import CurrentWeatherCard from './components/CurrentWeatherCard/CurrentWeatherCard';

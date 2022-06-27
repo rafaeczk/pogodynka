@@ -60,6 +60,10 @@
 .CurrentWeatherCard .container .box.long.list p{
     margin: 0;
 }
+.CurrentWeatherCard .container .box.long.list p i{
+    margin-right: 10px;
+    font-size: 1.1em;
+}
 
 
 @media screen and (max-width: 1500px){
