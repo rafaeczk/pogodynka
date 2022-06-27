@@ -1,0 +1,52 @@
+.ForecastCard .days{
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    padding: 10px 0;
+    gap: 10px;
+}
+.ForecastCard .days div{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    text-align: center;
+}.ForecastCard .days div:nth-of-type(1){
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.23));
+}.ForecastCard .days div:nth-of-type(2){
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.2));
+}.ForecastCard .days div:nth-of-type(3){
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.17));
+}.ForecastCard .days div:nth-of-type(4){
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.13));
+}.ForecastCard .days div:nth-of-type(5){
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.1));
+}
+.ForecastCard .charts nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: 5px 30px 0 30px;
+    gap: 5px;
+}
+.ForecastCard .charts nav button{
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 5px 20px;
+    backdrop-filter: blur(5px);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+}.ForecastCard .charts nav button.current{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.ForecastCard .charts .chart{
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    padding: 10px;
+}
