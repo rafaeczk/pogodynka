@@ -50,3 +50,33 @@
     backdrop-filter: blur(5px);
     padding: 10px;
 }
+
+
+@media screen and (max-width: 1500px) {
+    .ForecastCard .days{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px){
+    .ForecastCard .charts nav button{
+        font-size: 15px;
+        border-radius: 0;
+        padding: 2px 7px;
+    }
+    .ForecastCard .charts nav{
+        padding: 5px 10px 0 10px;
+        gap: 1px;
+        flex-wrap: wrap-reverse;
+    }
+    .ForecastCard .charts .chart{
+        padding: 2px;
+    }
+    .ForecastCard .days{
+        grid-template-columns: 1fr;
+        font-size: 15px;
+    }
+    .ForecastCard .days div{
+        height: 300px;
+    }
+}

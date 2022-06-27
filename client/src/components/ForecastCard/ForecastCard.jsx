@@ -201,7 +201,8 @@ const ForecastCard = () => {
                     fontSize: 12
                 }
             }
-        }
+        },
+        events: []
     }
 
   return (

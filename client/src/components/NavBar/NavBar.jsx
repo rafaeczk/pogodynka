@@ -33,8 +33,10 @@ const NavBar = () => {
           navigator.geolocation.getCurrentPosition(pos=>Ctx.setFetchOptions({...Ctx.fetchOptions, latitude: pos.coords.latitude, longitude: pos.coords.longitude}))
         }} className='find-me'>Znajdź mnie</button>
         <span>lub</span>
-        <input onKeyUp={(e)=>(e.key==='Enter') && (handleSearchBtnClick())} ref={inputRef} type="text" placeholder='Szukaj swojego MIASTA' />
-        <button onClick={handleSearchBtnClick} className='search-btn'><i className='bx bx-search'></i></button>
+        <div style={{position: 'relative'}}>
+          <input onKeyUp={(e)=>(e.key==='Enter') && (handleSearchBtnClick())} ref={inputRef} type="text" placeholder='Szukaj swojego MIASTA' />
+          <button onClick={handleSearchBtnClick} className='search-btn'><i className='bx bx-search'></i></button>
+        </div>
       </div>
     </div>
   )

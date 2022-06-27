@@ -10,16 +10,23 @@
     flex-direction: row;
     padding: 0 60px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.329), transparent);
+    font-size: 20px;
 }
 .NavBar .nav-el{
     position: relative;
+}
+.NavBar .nav-el.input-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
 }
 .NavBar .nav-el.input-field input{
     border: none;
     outline: none;
     background-color: rgba(255, 255, 255, 0.8);
     color: rgba(0, 0, 0, 0.7);
-    font-size: 20px;
+    font-size: 1em;
     padding: 15px 30px;
     border-radius: 24px;
     width: 400px;
@@ -34,7 +41,7 @@
 }
 .NavBar .nav-el.input-field > span{
     margin: 0 10px;
-    font-size: 20px;
+    font-size: 1em;
     letter-spacing: 3px;
     color: white;
     text-shadow: 0px 0px 1px black;
@@ -44,7 +51,7 @@
     outline: none;
     background-color: rgba(255, 255, 255, 0.8);
     color: rgba(0, 0, 0, 0.7);
-    font-size: 20px;
+    font-size: 1em;
     padding: 15px 30px;
     border-radius: 24px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.05);
@@ -57,7 +64,7 @@
     border: none;
     outline: none;
     color: rgba(0, 0, 0, 0.7);
-    font-size: 25px;
+    font-size: 1.2em;
     cursor: pointer;
     position: absolute;
     right: 0;
@@ -74,16 +81,39 @@
 
 .NavBar .nav-el.hello{
     color: white;
-    font-size: 35px;
     font-weight: 100;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: baseline;
+    font-size: 1.5em;
 }
 .NavBar .nav-el.hello p{
     margin: 0;
 }
 .NavBar .nav-el.hello span{
-    font-size: 20px;
+    font-size: .7em;
+}
+
+@media screen and (max-width: 1200px){
+    .NavBar{
+        flex-direction: column;
+    }
+    .NavBar .nav-el.input-field input{
+        width: unset;
+    }
+    .NavBar .nav-el.input-field{
+        font-size: .8em;
+    }
+    .NavBar .nav-el.hello{
+        font-size: 1em;
+    }
+    .NavBar .nav-el.hello span{
+        font-size: .5em;
+    }
+}
+@media screen and (max-width: 700px){
+    .NavBar .nav-el.input-field{
+        flex-direction: column;
+    }
 }
